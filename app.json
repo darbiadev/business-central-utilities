@@ -1,0 +1,26 @@
+{
+  "id": "1a291860-5336-4362-be03-bfff40fb7a98",
+  "name": "Business Central Utilities",
+  "publisher": "Darbia",
+  "version": "1.0.0.8",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "18.0.0.0",
+  "idRanges": [
+    {
+      "from": 50100,
+      "to": 50149
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://darbiadev-bc-utilities.com/help/",
+  "showMyCode": true,
+  "runtime": "7.0"
+}

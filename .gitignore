@@ -1,0 +1,10 @@
+# IDE
+.vscode
+
+#Packaging
+.alpackages
+*.app
+.snapshots
+
+# Docs
+docs/_build
