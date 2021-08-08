@@ -1,5 +1,6 @@
 # IDE
 .vscode
+.idea
 
 #Packaging
 .alpackages
@@ -7,4 +8,4 @@
 .snapshots
 
 # Docs
-docs/_build
+docs/build

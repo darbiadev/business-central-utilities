@@ -1,3 +1,3 @@
 # Business Central Utilities
 
-This repo culminates mutiple utility codeunits into one Business Central app.
+This repo culminates multiple utility codeunits into one Business Central app.
