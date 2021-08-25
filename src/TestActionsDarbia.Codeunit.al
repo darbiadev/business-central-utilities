@@ -1,4 +1,4 @@
-codeunit 50104 "Upload Actions"
+codeunit 50103 "TestActionsDarbia"
 {
     procedure ReleaseSOCreateWSReleaseWS(salesHeaderNumber: Text): Text;
     var
@@ -31,12 +31,12 @@ codeunit 50104 "Upload Actions"
         WhseRequest.SETRANGE("Source Subtype", SalesHeader."Document Type");
         WhseRequest.SETRANGE("Source No.", SalesHeader."No.");
         // Create warehouse shipments (taken from cu 5752 Get Source Doc. Outbound, CreateWhseShipmentHeaderFromWhseRequest)
-        if WhseRequest.Findset then begin
+        if WhseRequest.Findset() then begin
             Clear(GetSourceDocuments);
             GetSourceDocuments.SetHideDialog(true);
             GetSourceDocuments.UseRequestPage(false);
             GetSourceDocuments.SetTableView(WhseRequest);
-            GetSourceDocuments.RunModal;
+            GetSourceDocuments.RunModal();
         end;
     end;
 
@@ -125,5 +125,24 @@ codeunit 50104 "Upload Actions"
               else
                   exit(PostedWhseShipmentHeader."No." + '|' + SalesShipmentHeader."No.");
               */
+    end;
+
+    procedure RegisterPick(warehouseActivityNumber: Code[20]): Text;
+    var
+        WarehouseActivityHeader: Record "Warehouse Activity Header";
+        WhseActivityRegister: Codeunit "Whse.-Activity-Register";
+        WhseActivityPost: Codeunit "Whse.-Activity-Post";
+        ResultText: Text;
+    begin
+        ResultText := '';
+
+        if WarehouseActivityHeader.Get(warehouseActivityNumber)
+           then begin
+            // WhseActivityPost.Run();
+        end else begin
+            ResultText := warehouseActivityNumber + ' not found';
+        end;
+
+        exit(ResultText);
     end;
 }

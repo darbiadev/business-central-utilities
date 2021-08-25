@@ -1,0 +1,11 @@
+{
+  "name": "Test rules",
+  "description": "Testing AL rules",
+  "rules": [
+    {
+      "id": "AA0005",
+      "action": "Hidden",
+      "justification": "https://github.com/microsoft/AL/issues/2365"
+    }
+  ]
+}

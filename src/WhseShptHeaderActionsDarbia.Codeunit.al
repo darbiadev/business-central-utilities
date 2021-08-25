@@ -1,4 +1,4 @@
-codeunit 50101 "WarehouseShipmentHeaderActions"
+codeunit 50101 "WhseShptHeaderActionsDarbia"
 {
     procedure ReleaseWarehouseShipmentHeader(warehouseShipmentHeaderNumber: Text): Text;
     var

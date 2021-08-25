@@ -1,4 +1,4 @@
-codeunit 50100 "SalesHeaderActions"
+codeunit 50100 "SalesHeaderActionsDarbia"
 {
     procedure ReleaseSalesHeader(salesHeaderNumber: Text): Text;
     var

@@ -2,14 +2,14 @@
   "id": "1a291860-5336-4362-be03-bfff40fb7a98",
   "name": "Business Central Utilities",
   "publisher": "Darbia",
-  "version": "1.0.0.8",
-  "brief": "",
-  "description": "",
+  "version": "1.0.0.9",
+  "brief": "Business Central Utilities",
+  "description": "This app culminates multiple utility codeunits.",
   "privacyStatement": "",
   "EULA": "",
   "help": "",
-  "url": "",
-  "logo": "",
+  "url": "https://github.com/darbiadev/business-central-utilities",
+  "logo": "static/images/logo.png",
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
@@ -20,7 +20,7 @@
       "to": 50149
     }
   ],
-  "contextSensitiveHelpUrl": "https://darbiadev-bc-utilities.com/help/",
+  "contextSensitiveHelpUrl": "https://darbiadev.github.io/business-central-utilities/",
   "showMyCode": true,
   "runtime": "7.0"
 }
